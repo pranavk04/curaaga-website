@@ -1,0 +1,277 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  height: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(-45deg, #000051, #00004a, #000042, #000000);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* General Text Styling */
+p,
+a,
+h1,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: transparent;
+  padding: 10px 0;
+  display: flex;
+  backdrop-filter: blur(5px);
+  justify-content: center;
+}
+
+.title {
+  color: #ff8000;
+  text-shadow: 1px 2px 1px rgba(161, 161, 161, 0.5);
+  font-size: clamp(1rem, 3vw, 2rem) !important;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  gap: 0px;
+  margin: 0 0px;
+}
+
+.nav-item {
+  text-align: center;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5vmin;
+  font-weight: bolder;
+}
+
+.nav-link:hover {
+  color: #ff8000;
+}
+
+/* Logo */
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+/* Team Section */
+.section-team {
+  text-align: center;
+  /* Centers text within the section */
+  font-family: "Poppins", sans-serif;
+  padding: 80px 0;
+  place-items: center;
+  display: grid;
+  /* Set display to flex for centering */
+  flex-wrap: wrap;
+  /* Allows cards to wrap to the next line */
+  justify-content: center;
+  /* Centers all cards within the section */
+}
+
+.section-team .header-section {
+  margin-bottom: 30vim;
+}
+
+.section-team .header-section .small-title {
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #3e64ff;
+}
+
+.section-team .header-section .title {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.section-team .single-person {
+  margin: 20px;
+  /* Space between cards */
+  padding: 15px;
+  /* Reduced padding */
+  max-width: 250px;
+  /* Set a maximum width for the cards */
+  flex: 1 1 200px;
+  /* Allows for responsive resizing */
+  border-radius: 5px;
+  transition: background 0.3s;
+
+}
+
+.section-team .single-person .person-image {
+  position: relative;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  border: 4px dashed transparent;
+  transition: padding 0.3s;
+}
+
+.section-team .single-person:hover .person-image {
+  padding: 12px;
+  border: 1px dashed #fdab51;
+}
+
+.section-team .single-person .person-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.section-team .single-person .person-image .icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: linear-gradient(to right, #e98305, #ede656);
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.section-team .single-person:hover .person-image .icon {
+  background-color: #fff;
+  color: #013c83;
+}
+
+.section-team .single-person .person-info .full-name {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.section-team .single-person .person-info .speciality {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #eb7c03;
+  transition: color 0.3s;
+}
+
+.section-team .single-person:hover .full-name,
+.section-team .single-person:hover .speciality {
+  color: #fddb66;
+}
+
+.full-name {
+  color: rgb(255, 255, 255, 1);
+}
+
+
+
+.mandala-left,
+.mandala-right {
+  width: 50vmin;
+  height: 50vmin;
+  opacity: 1;
+  position: fixed;
+}
+
+.mandala-left {
+  top: 35%;
+  left: -35vmin;
+  /* Adjust to center horizontally on the left */
+  animation: pulse 6s ease-in-out infinite;
+}
+
+.mandala-right {
+  top: 35%;
+  right: -35vmin;
+  /* Adjust to center horizontally on the right */
+  animation: pulse 6s ease-in-out infinite;
+}
+
+
+/* Keyframes for mandala pulsing effect */
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Center Mandala Styles */
+.mandala-center {
+  z-index: -1;
+  /* Ensure it's behind other elements */
+  position: reletive;
+  /* Stay absolute to its container */
+  top: 0%;
+  left: 0%;
+  size: 100%;
+  opacity: 1;
+  animation: rotatemandala 60s linear infinite;
+}
+
+/* Mandala and Logo Styles */
+.mandala-center {
+  position: absolute;
+  opacity: 1;
+  animation: rotatemandala 60s linear infinite;
+}
+
+/* Keyframes for CU Raaga mandala rotation */
+@keyframes rotatemandala {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.row>div {
+  display: grid;
+  place-items: center;
+}
