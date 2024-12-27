@@ -4,7 +4,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="/assets/static/app_generated_index-6937cd5a.CPxeTgzP.css"
+      href="/assets/static/app_generated_index-6937cd5a.DZX7tV17.css"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -98,13 +98,13 @@
                   decoding="async"
                   loading="lazy" /></a
               ><a
-                href="/donate"
-                class="w-link c3qensl cuuodqs c1njgogo c1364s1u c1rh6wnq cps4eg4 c9gsf0s c1vfjasn c12z8726 c102wbss coe7u1z cjgwpw7 c9ppshj c1tb1jcj c1o9ivr c1hf30wg c1pywnav cowmv9w c8fdr0d"
-                >Donate</a
-              ><a
                 href="/events"
                 class="w-link c3qensl cuuodqs c1njgogo c1364s1u c1rh6wnq cps4eg4 c9gsf0s c1vfjasn c12z8726 c102wbss c1pibtxj cjgwpw7 c9ppshj c1tb1jcj c1o9ivr cowmv9w c8fdr0d"
                 >Events</a
+              ><a
+                href="/donate"
+                class="w-link c3qensl cuuodqs c1njgogo c1364s1u c1rh6wnq cps4eg4 c9gsf0s c1vfjasn c12z8726 c102wbss coe7u1z cjgwpw7 c9ppshj c1tb1jcj c1o9ivr c1hf30wg c1pywnav cowmv9w c8fdr0d"
+                >Donate</a
               >
             </div>
             <img
@@ -127,6 +127,292 @@
               loading="lazy"
             />
           </div>
+          <div style="display: contents">
+            <div style="display: contents">
+              <div class="w-html-embed">
+                <style>
+                  :root {
+                    --ani-duration: var(--duration-default, 0.2s);
+                    --ani-delay: 0s;
+                    --ani-slide-offset: 20%;
+                    --ani-zoom-in-scale: 1;
+                    --ani-zoom-out-scale: 0.85;
+                    --ani-flip-rotate: 30deg;
+                    --ani-easing: var(--easing-default, ease);
+                    --ani-fill-mode: forwards;
+                  }
+                  [data-ani]:not([data-ani-children]),
+                  [data-ani-children]:not([data-ani-progress]) > * {
+                    animation-duration: var(--ani-duration);
+                    animation-delay: var(--ani-delay);
+                    animation-timing-function: var(--ani-easing);
+                    animation-fill-mode: var(--ani-fill-mode);
+                    opacity: 0;
+                  }
+                  [data-ani-progress]:not([data-ani-children]),
+                  [data-ani-children]:not([data-ani]) > * {
+                    transition-property: opacity, transform;
+                    transition-duration: var(--ani-duration);
+                    transition-timing-function: var(--ani-easing);
+                    opacity: 0;
+                  }
+                  @keyframes fadeIn {
+                    from {
+                      opacity: 0;
+                    }
+                    to {
+                      opacity: 1;
+                    }
+                  }
+                  @keyframes fadeOut {
+                    from {
+                      opacity: 1;
+                    }
+                    to {
+                      opacity: 0;
+                    }
+                  }
+                  [data-ani-children][data-ani="fade"] > .in,
+                  [data-ani="fade"]:where(
+                      .in:not([data-state]),
+                      [data-state$="open"],
+                      [data-state="active"]
+                    ) {
+                    animation-name: fadeIn;
+                  }
+                  [data-ani-children][data-ani="fade"] > .out,
+                  [data-ani="fade"]:where(
+                      .out:not([data-state]),
+                      [data-state="closed"],
+                      [data-state="inactive"]
+                    ) {
+                    animation-name: fadeOut;
+                  }
+                  @keyframes slideIn {
+                    from {
+                      opacity: 0;
+                      translate: var(--ani-slide-transform);
+                    }
+                    to {
+                      opacity: 1;
+                      translate: none;
+                    }
+                  }
+                  @keyframes slideOut {
+                    from {
+                      opacity: 1;
+                      translate: none;
+                    }
+                    to {
+                      opacity: 0;
+                      translate: var(--ani-slide-transform);
+                    }
+                  }
+                  [data-ani-children][data-ani|="slide"] > .in,
+                  [data-ani|="slide"]:where(
+                      .in:not([data-state]),
+                      [data-state$="open"],
+                      [data-state="active"]
+                    ) {
+                    animation-name: slideIn;
+                  }
+                  [data-ani-children][data-ani|="slide"] > .out,
+                  [data-ani|="slide"]:where(
+                      .out:not([data-state]),
+                      [data-state="closed"],
+                      [data-state="inactive"]
+                    ) {
+                    animation-name: slideOut;
+                  }
+                  [data-ani="slide-up"] {
+                    --ani-slide-transform: 0 var(--ani-slide-offset);
+                  }
+                  [data-ani="slide-down"] {
+                    --ani-slide-transform: 0 calc(-1 * var(--ani-slide-offset));
+                  }
+                  [data-ani="slide-left"] {
+                    --ani-slide-transform: var(--ani-slide-offset);
+                  }
+                  [data-ani="slide-right"] {
+                    --ani-slide-transform: calc(-1 * var(--ani-slide-offset));
+                  }
+                  @keyframes zoomIn {
+                    from {
+                      opacity: 0;
+                      scale: var(--ani-zoom-out-scale);
+                    }
+                    to {
+                      opacity: 1;
+                      scale: 1;
+                    }
+                  }
+                  @keyframes zoomOut {
+                    from {
+                      opacity: 1;
+                      scale: 1;
+                    }
+                    to {
+                      opacity: 0;
+                      scale: var(--ani-zoom-in-scale);
+                    }
+                  }
+                  [data-ani-children][data-ani="zoom"] > .in,
+                  [data-ani|="zoom"]:where(
+                      .in:not([data-state]),
+                      [data-state$="open"],
+                      [data-state="active"]
+                    ) {
+                    animation-name: zoomIn;
+                  }
+                  [data-ani-children][data-ani="zoom"] > .out,
+                  [data-ani|="zoom"]:where(
+                      .out:not([data-state]),
+                      [data-state="closed"],
+                      [data-state="inactive"]
+                    ) {
+                    animation-name: zoomOut;
+                  }
+                  [data-ani-children][data-ani-progress="zoom"] > *,
+                  [data-ani-progress="zoom"]:not([data-ani-children]) {
+                    transform: scale(var(--ani-zoom-out-scale));
+                  }
+                  @keyframes flipInY {
+                    from {
+                      rotate: y var(--ani-flip-rotate);
+                      perspective: 2000px;
+                      opacity: 0;
+                    }
+                    to {
+                      rotate: y 0;
+                      opacity: 1;
+                    }
+                  }
+                  @keyframes flipOutY {
+                    from {
+                      rotate: y 0;
+                      opacity: 1;
+                    }
+                    to {
+                      perspective: 2000px;
+                      rotate: y var(--ani-flip-rotate);
+                      opacity: 0;
+                    }
+                  }
+                  @keyframes flipInX {
+                    from {
+                      perspective: 2000px;
+                      rotate: x var(--ani-flip-rotate);
+                      opacity: 0;
+                    }
+                    to {
+                      rotate: x 0;
+                      opacity: 1;
+                    }
+                  }
+                  @keyframes flipOutX {
+                    from {
+                      rotate: x 0;
+                      opacity: 1;
+                    }
+                    to {
+                      perspective: 2000px;
+                      rotate: x var(--ani-flip-rotate);
+                      opacity: 0;
+                    }
+                  }
+                  [data-ani-children][data-ani="flip-y"] > .in,
+                  [data-ani="flip-y"]:where(
+                      .in:not([data-state]),
+                      [data-state$="open"],
+                      [data-state="active"]
+                    ) {
+                    animation-name: flipInY;
+                  }
+                  [data-ani-children][data-ani="flip-x"] > .in,
+                  [data-ani="flip-x"]:where(
+                      .in:not([data-state]),
+                      [data-state$="open"],
+                      [data-state="active"]
+                    ) {
+                    animation-name: flipInX;
+                  }
+                  [data-ani-children][data-ani="flip-y"] > .out,
+                  [data-ani="flip-y"]:where(
+                      .out:not([data-state]),
+                      [data-state="closed"],
+                      [data-state="inactive"]
+                    ) {
+                    animation-name: flipOutY;
+                  }
+                  [data-ani-children][data-ani="flip-x"] > .out,
+                  [data-ani="flip-x"]:where(
+                      .out:not([data-state]),
+                      [data-state="closed"],
+                      [data-state="inactive"]
+                    ) {
+                    animation-name: flipOutX;
+                  }
+                  @keyframes expandDown {
+                    from {
+                      height: 0;
+                    }
+                    to {
+                      height: var(--newHeight);
+                    }
+                  }
+                  @keyframes expandUp {
+                    from {
+                      height: var(--newHeight);
+                    }
+                    to {
+                      height: 0;
+                    }
+                  }
+                  [data-ani="expand"],
+                  [data-ani="expand"][data-state="open"],
+                  [data-ani="expand"].in {
+                    --newHeight: var(
+                      --custom-height,
+                      var(
+                        --radix-accordion-content-height,
+                        var(--radix-collapsible-content-height, 100%)
+                      )
+                    );
+                    overflow: hidden;
+                    opacity: 1;
+                  }
+                  [data-ani-children][data-ani="expand"] > .in,
+                  [data-ani="expand"]:where(
+                      .in:not([data-state]),
+                      [data-state$="open"],
+                      [data-state="active"]
+                    ) {
+                    animation: expandDown var(--ani-duration) var(--ani-easing);
+                  }
+                  [data-ani-children][data-ani="expand"] > .out,
+                  [data-ani="expand"]:where(
+                      .out:not([data-state]),
+                      [data-state="closed"],
+                      [data-state="inactive"]
+                    ) {
+                    animation: expandUp var(--ani-duration) var(--ani-easing);
+                  }
+                  @media (prefers-reduced-motion: reduce) {
+                    [data-ani]:not([data-ani-children]),
+                    [data-ani-progress]:not([data-ani-children]),
+                    [data-ani-children] > * {
+                      opacity: 1;
+                      transform: none;
+                      animation: none;
+                      rotate: none;
+                      scale: none;
+                      translate: none;
+                    }
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <main class="w-box">
@@ -134,7 +420,10 @@
           <div
             class="w-box c1qt2lsk cs6d2p0 couapq8 c1ageie2 cpu6hzn c1bju20h cmfnow3 cyds3c6 c1h6ws3 c1cl8q64"
           >
-            <div class="w-box cmfnow3 cyds3c6 c1h6ws3 c14gjdlf c13arxhr">
+            <div
+              data-ani="fade"
+              class="w-box cmfnow3 cyds3c6 c1h6ws3 c14gjdlf c13arxhr"
+            >
               <img
                 alt=""
                 width="1198"
@@ -166,19 +455,18 @@
               <div class="w-box">
                 <p class="w-paragraph c121jrs4">
                   At CU Raaga, we believe in the power of South Asian classical
-                  arts to bring people together. Your donations and sponsorships
-                  enable us to create meaningful events, workshops, and
-                  collaborations that celebrate and preserve these rich
-                  traditions. With your support, we can continue sharing this
-                  vibrant culture with the Columbia community and beyond,
-                  inspiring future generations to connect with their heritage.
-                  Your generosity fuels our mission and makes a lasting
-                  impact!<br /><br />-Team Raaga
+                  arts to bring people together. If you’d like to support CU
+                  Raaga and help us bring more enriching performances to the
+                  community, please consider donating. Your contributions make a
+                  huge difference in our ability to continue promoting Indian
+                  classical music and dance. Your generosity fuels our mission
+                  and makes a lasting impact!<br /><br />-Team Raaga
                 </p>
                 <div class="w-box cmfnow3 cyds3c6 c1h6ws3 c14gjdlf">
                   <a
-                    class="w-link c1691jav cb5iuaa cjkwqym c182yx8k c1qxwfgn c1f2rhp1 c1w2wl4t c6kbysu cn8lq0 ca0ygra c102wbss c2lxzwz cqs7f28 c4rs0h7 c121jrs4"
-                    href="#"
+                    href="https://securepay.cuit.columbia.edu/payment/pub/ZbvkvY9PFbpi2fe/"
+                    target="_blank"
+                    class="w-link c1691jav cb5iuaa cjkwqym c182yx8k c1qxwfgn c1f2rhp1 c1w2wl4t c6kbysu cn8lq0 ca0ygra c102wbss c2lxzwz cqs7f28 c4rs0h7 cv5hogk c121jrs4"
                     >Donate Through Columbia SecurePay</a
                   >
                 </div>
@@ -229,7 +517,8 @@
             class="w-box cmfnow3 c1h6ws3 c14gjdlf c1y95twg czy2rvt c1moo5u8 c2z1n2t cyds3c6"
           >
             <div
-              class="w-box c2zld7e cmfnow3 c1qwqjnx c1h6ws3 c14gjdlf c1ooi1vp cp0715s c1a0wjo7 c1a23n9u c8n3krh c7a5nue c193rh07 coplsz7 cetuug3 csrbcmi colbvg9 c1hmxjlg c1u3iyrg c6gr9th ckaip51 cx8hvlx c82in6z c174dspw c1vv0nep c13arxhr c1ctiplc cgqde59"
+              data-ani="slide-up"
+              class="w-box cehytkg c3iqx5g cniabjs c14gjdlf coplsz7 cetuug3 c2zld7e cmfnow3 c1qwqjnx c1h6ws3 c1ooi1vp cp0715s c1a0wjo7 c1a23n9u c8n3krh c7a5nue c193rh07 csrbcmi colbvg9 c1hmxjlg c1u3iyrg c6gr9th ckaip51 cx8hvlx c82in6z c174dspw c1vv0nep c13arxhr c1ctiplc cgqde59"
             >
               <div
                 class="w-box cmfnow3 cyds3c6 c1h6ws3 c14gjdlf colbvg9 c1hmxjlg"
@@ -274,8 +563,9 @@
                   announced during concert speeches
                 </p>
                 <a
-                  class="w-link c55jb15 c74op2r cjkwqym c182yx8k c1qxwfgn c1f2rhp1 c1w2wl4t c6kbysu cn8lq0 ca0ygra c102wbss c1maylgi cqs7f28 c4rs0h7"
-                  href="#"
+                  href="https://securepay.cuit.columbia.edu/payment/pub/donations/"
+                  target="_blank"
+                  class="w-link c55jb15 c74op2r cjkwqym c182yx8k c1qxwfgn c1f2rhp1 c1w2wl4t c6kbysu cn8lq0 ca0ygra c102wbss c1maylgi cqs7f28 c4rs0h7 cv5hogk"
                   >Support CU Raaga</a
                 >
               </div>
@@ -322,8 +612,9 @@
                   announced during concert speeches
                 </p>
                 <a
-                  class="w-link c55jb15 c74op2r cjkwqym c182yx8k c1qxwfgn c1f2rhp1 c1w2wl4t c6kbysu cn8lq0 ca0ygra c102wbss c1maylgi cqs7f28 c4rs0h7"
-                  href="#"
+                  href="https://securepay.cuit.columbia.edu/payment/pub/donations/"
+                  target="_blank"
+                  class="w-link c55jb15 c74op2r cjkwqym c182yx8k c1qxwfgn c1f2rhp1 c1w2wl4t c6kbysu cn8lq0 ca0ygra c102wbss c1maylgi cqs7f28 c4rs0h7 cv5hogk"
                   >Support CU Raaga</a
                 >
               </div>
@@ -370,8 +661,9 @@
                   announced during concert speeches
                 </p>
                 <a
-                  class="w-link c55jb15 c74op2r cjkwqym c182yx8k c1qxwfgn c1f2rhp1 c1w2wl4t c6kbysu cn8lq0 ca0ygra c102wbss c1maylgi cqs7f28 c4rs0h7"
-                  href="#"
+                  href="https://securepay.cuit.columbia.edu/payment/pub/donations/"
+                  target="_blank"
+                  class="w-link c55jb15 c74op2r cjkwqym c182yx8k c1qxwfgn c1f2rhp1 c1w2wl4t c6kbysu cn8lq0 ca0ygra c102wbss c1maylgi cqs7f28 c4rs0h7 cv5hogk"
                   >Support CU Raaga</a
                 >
               </div>
@@ -418,14 +710,15 @@
                   announced during concert speeches
                 </p>
                 <a
-                  class="w-link c55jb15 c74op2r cjkwqym c182yx8k c1qxwfgn c1f2rhp1 c1w2wl4t c6kbysu cn8lq0 ca0ygra c102wbss c1maylgi cqs7f28 c4rs0h7"
-                  href="#"
+                  href="https://securepay.cuit.columbia.edu/payment/pub/donations/"
+                  target="_blank"
+                  class="w-link c55jb15 c74op2r cjkwqym c182yx8k c1qxwfgn c1f2rhp1 c1w2wl4t c6kbysu cn8lq0 ca0ygra c102wbss c1maylgi cqs7f28 c4rs0h7 cv5hogk"
                   >Support CU Raaga</a
                 >
               </div>
             </div>
             <div
-              class="w-box cmfnow3 c1h6ws3 c14gjdlf c13arxhr c1nhcdh4 c1u3iyrg cgwe1vy ckaip51 cx8hvlx c82in6z c174dspw c18lhxnv c8adc9v c9jw9ab c1tk498q cps4eg4 c9gsf0s c1vfjasn c12z8726 c8aibvd c1l2e7wt c1ucdaho c374aap c2zld7e cgqde59"
+              class="w-box cc6da4b c1kzc4fr cmfnow3 c1h6ws3 c14gjdlf c13arxhr c1nhcdh4 c1u3iyrg cgwe1vy ckaip51 cx8hvlx c82in6z c174dspw c18lhxnv c8adc9v c9jw9ab c1tk498q cps4eg4 c9gsf0s c1vfjasn c12z8726 c8aibvd c1l2e7wt c1ucdaho c374aap c2zld7e cgqde59"
             >
               <div
                 class="w-box ccbb19b cmfnow3 cyds3c6 cmk90sk c14gjdlf c1bexh43 c1ohtft"
@@ -439,7 +732,7 @@
                   advertisement.
                 </p>
                 <a
-                  class="w-link c55jb15 c74op2r cjkwqym c182yx8k c1qxwfgn c1f2rhp1 c1w2wl4t c6kbysu cn8lq0 ca0ygra c102wbss c1maylgi cqs7f28 c4rs0h7"
+                  class="w-link c55jb15 c74op2r cjkwqym c182yx8k c1qxwfgn c1f2rhp1 c1w2wl4t c6kbysu cn8lq0 ca0ygra c102wbss c1maylgi cqs7f28 c4rs0h7 cv5hogk"
                   href="#"
                   >Support CU Raaga</a
                 >
@@ -481,7 +774,7 @@
       <div style="display: contents">
         <div style="display: contents">
           <footer
-            class="w-box cmfnow3 c1h6ws3 cn40pdj c76uueo c1xzci8e c1u3iyrg cgwe1vy ckaip51 cx8hvlx c82in6z c174dspw cgqde59"
+            class="w-box cmfnow3 c1h6ws3 cn40pdj czjp7ei c1xzci8e c1u3iyrg cgwe1vy ckaip51 cx8hvlx c82in6z c174dspw cgqde59"
           >
             <div class="w-box cdsu5s4 c2z1n2t cmfnow3 c1sfifsa">
               <img
@@ -525,14 +818,15 @@
               />
             </div>
             <div
-              class="w-box c1237ggw c2z1n2t cmfnow3 c14gjdlf c1h6ws3 cyds3c6 c17ueiqm c1sfifsa"
+              data-ani-progress="fade"
+              class="w-box c1237ggw c2z1n2t cmfnow3 c14gjdlf c1h6ws3 cyds3c6 c17ueiqm c1ooi1vp c1d16jk5 c1sfifsa"
             >
               <div class="w-box">
                 <div class="w-box cmfnow3 cyds3c6 c1h6ws3 c14gjdlf">
                   <h1
                     class="w-heading c9d6c97 c16sxl6v ces3ljk cqtf9fj c1bexh43 c1q8gg5q cjgwpw7 c138w8zq c55jb15"
                   >
-                    SUBSCRIBE TO CU RAAGA
+                    || SUBSCRIBE TO CU RAAGA ||
                   </h1>
                   <h1
                     class="w-heading c1k3p140 c4xe7i6 ces3ljk cqtf9fj c1bexh43 c1yzz69j cjsowr4"
@@ -542,16 +836,16 @@
                 </div>
               </div>
               <div
-                class="w-box cmfnow3 c1h6ws3 c14gjdlf c1y95twg c152ib0v c1bexh43"
+                class="w-box cmfnow3 c1h6ws3 c14gjdlf c1y95twg c152ib0v c1bexh43 cpu6hzn"
               >
                 <input
                   placeholder="your.email@gmail.com"
-                  class="w-text-input c4otfiw c1cl938r c1gmrp5q c1cobgec c1bexh43 c1eb4hg0"
+                  class="w-text-input c1w2wl4t c6kbysu cn8lq0 ca0ygra c1bexh43 ccbb19b c1eb4hg0"
                   type="text"
                 /><a
-                  class="w-link cy8pd0p c9ir2l ckwa1dj cps45ek cmx38w4 c1ycbak3 c4otfiw c1cl938r c1gmrp5q c1cobgec c102wbss c1maylgi cqs7f28 c4rs0h7"
+                  class="w-link cy8pd0p c9ir2l ckwa1dj cps45ek cmx38w4 c1ycbak3 c4otfiw c1cl938r c1gmrp5q c1cobgec c102wbss c1maylgi cqs7f28 c4rs0h7 cv5hogk"
                   href="#"
-                  >button</a
+                  >subscribe</a
                 >
               </div>
               <div
@@ -561,7 +855,7 @@
                   <div style="display: contents">
                     <a
                       target="_blank"
-                      href="https://webstudio.is/"
+                      href="https://www.instagram.com/curaaga/?hl=en"
                       class="w-link c15toot3 c198ets0 c1l8819z c1lmh6yb"
                       ><div class="w-html-embed">
                         <svg
@@ -595,30 +889,7 @@
                   <div style="display: contents">
                     <a
                       target="_blank"
-                      href="https://webstudio.is/"
-                      class="w-link c15toot3 c198ets0 c1l8819z c1lmh6yb"
-                      ><div class="w-html-embed">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="100%"
-                          height="100%"
-                          viewBox="0 0 32 32"
-                          fill="none"
-                        >
-                          <path
-                            d="M24.0516 3.3457H28.3452L18.9651 14.0671L30 28.6564H21.3598L14.5924 19.8081L6.84902 28.6564H2.55291L12.5858 17.1887L2 3.3457H10.8596L16.9767 11.4335L24.0516 3.3457ZM22.5448 26.0864H24.9238L9.56687 5.78073H7.01386L22.5448 26.0864Z"
-                            fill="currentcolor
-"
-                          ></path>
-                        </svg></div
-                    ></a>
-                  </div>
-                </div>
-                <div style="display: contents">
-                  <div style="display: contents">
-                    <a
-                      target="_blank"
-                      href="https://webstudio.is/"
+                      href="https://www.facebook.com/curaaga/"
                       class="w-link c15toot3 c198ets0 c1l8819z c1lmh6yb"
                       ><div class="w-html-embed">
                         <svg
@@ -640,7 +911,7 @@
                   <div style="display: contents">
                     <a
                       target="_blank"
-                      href="https://webstudio.is/"
+                      href="https://www.youtube.com/@columbiaraaga6765/videos"
                       class="w-link c15toot3 c198ets0 c1l8819z c1lmh6yb"
                       ><div class="w-html-embed">
                         <svg
@@ -738,18 +1009,18 @@
       }
     </script>
     <script
-      src="/assets/entries/entry-server-routing.Bm4xYlXU.js"
+      src="/assets/entries/entry-server-routing.DDX80wo2.js"
       type="module"
       async
     ></script>
     <link
       rel="modulepreload"
-      href="/assets/entries/pages_donate.C7h_wnyy.js"
+      href="/assets/entries/pages_donate.jf_4gRH8.js"
       as="script"
       type="text/javascript"
     /><link
       rel="modulepreload"
-      href="/assets/chunks/chunk-DE5ZUpTh.js"
+      href="/assets/chunks/chunk-DSDbDVC3.js"
       as="script"
       type="text/javascript"
     />
