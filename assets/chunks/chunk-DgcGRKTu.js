@@ -1,0 +1,1 @@
+import{r as s,j as t}from"./chunk-BDoCNTAV.js";const o=s.forwardRef((e,r)=>t.jsx("span",{...e,ref:r}));o.displayName="Span";const d="ul",i="ol",f=s.forwardRef(({ordered:e=!1,...r},a)=>s.createElement(e?i:d,{...r,ref:a}));f.displayName="List";const n=s.forwardRef(({children:e,...r},a)=>t.jsx("li",{...r,ref:a,children:e}));n.displayName="ListItem";export{f as d,n as i,o as m};
